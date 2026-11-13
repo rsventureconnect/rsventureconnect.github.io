@@ -1,0 +1,48 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Standorte | RS Venture Connect</title><meta name="description" content="Wissen und Training rund um die RS Venture Connect."><style>:root{--navy:#006395;--blue:#2694db;--cream:#ffffff;--gold:#ffffff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:#103750;font:18px/1.6 system-ui,-apple-system,sans-serif}a{color:#00517f;text-decoration-thickness:2px;text-underline-offset:4px}a:focus-visible{outline:3px solid #ffffff;outline-offset:3px;box-shadow:0 0 0 6px #00517f}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;background:white;z-index:4;padding:1rem}header{background:#fff;border-bottom:1px solid #becfd1} .bar{max-width:1200px;margin:auto;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.brand{font-size:1.12rem;font-weight:800;text-decoration:none;color:var(--navy)}nav{display:flex;gap:.8rem;flex-wrap:wrap}nav a{font-size:.91rem;font-weight:700;text-decoration:none}nav a[aria-current=page]{text-decoration:underline}.hero{background:var(--navy);color:white;position:relative;overflow:hidden}.hero:after{content:'';position:absolute;right:-5%;bottom:-170px;width:65%;height:340px;border:2px solid #5294a1;border-radius:50%;transform:rotate(-13deg);opacity:.6;pointer-events:none}.wrap{max-width:1200px;margin:auto;padding:2rem 1.5rem}.hero .wrap{position:relative;z-index:1;padding-top:2.5rem;padding-bottom:2.5rem}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.8rem;font-weight:800;color:#ffffff}h1{font-size:clamp(2.2rem,4.2vw,3.5rem);line-height:1.04;letter-spacing:-.04em;max-width:900px;margin:.5rem 0 1.5rem}h2{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.15}h3{line-height:1.25}.lead{max-width:720px;font-size:1.2rem}.button{display:inline-block;background:#00517f;color:#ffffff;padding:.8rem 1.15rem;font-weight:800;border:2px solid #ffffff;border-radius:4px;text-decoration:none;margin-top:.8rem}.button:hover{background:#003a5d}.quicklinks{display:flex;flex-wrap:wrap;gap:.7rem}.quicklinks .button{margin:0}.brandlogo{display:block;width:100px;height:auto;max-height:90px;object-fit:contain}.branding{display:flex;align-items:center;gap:1rem}.hero .eyebrow{color:#ffffff}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:1.2rem}.card{background:#fff;border:1px solid #c4d5d4;border-radius:6px;padding:1rem}.card h3{margin-top:0}.number{color:#00517f;font-size:.85rem;font-weight:800;letter-spacing:.08em}.notice{border-left:6px solid #006395;background:#e7f3fa;padding:1rem 1.3rem;margin:1.5rem 0}.muted{color:#3f5960}.split{display:grid;grid-template-columns:2fr 1fr;gap:2rem}@media(max-width:700px){.split{grid-template-columns:1fr}.hero .wrap{padding:3rem 1.5rem}nav{gap:.75rem}}footer{background:#006395;color:white}footer a{color:white}footer .wrap{padding-top:2rem;padding-bottom:2rem}li{margin:.5rem 0}.subpage .hero .wrap{padding-top:2.5rem;padding-bottom:2.5rem}.subpage h1{font-size:clamp(2.2rem,4vw,3.5rem);margin:.4rem 0 1rem}.subpage .wrap{padding-top:2rem;padding-bottom:2rem}.subpage h2{font-size:clamp(1.3rem,2vw,1.65rem)}.subpage .grid{gap:.75rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}.subpage .card{padding:1rem}.subpage .card h2,.subpage .card h3{font-size:1.2rem;margin:0 0 .5rem}.subpage .card p{margin:.5rem 0}.subpage .button{min-height:48px}nav{gap:.55rem}nav a{display:inline-flex;align-items:center;min-height:48px;padding:.55rem .8rem;border:1px solid #b9d3e1;border-radius:5px;background:#f4f9fc;font-size:1rem;line-height:1.25}nav a:hover,nav a[aria-current=page]{background:#00517f;color:#fff}nav a:focus-visible{outline:3px solid #00517f;outline-offset:2px;box-shadow:none}@media(max-width:700px){nav{gap:.45rem}nav a{min-height:48px}}
+.events{list-style:none;padding:0;margin:1rem 0;display:grid;gap:.75rem;max-width:760px}
+.event{display:flex;gap:1.2rem;align-items:center;background:#fff;border:1px solid #c4d5d4;border-left:6px solid #006395;border-radius:6px;padding:.9rem 1.1rem}
+.event .date{flex:none;width:9rem;margin:0;font-weight:800;color:#00517f;line-height:1.2}
+.event .date .day{display:block;font-size:1.4rem}
+.event .date .month{display:block;font-size:1rem}
+.subpage .event h3{margin:0;font-size:1.25rem}
+.event div p{margin:.2rem 0 0}
+@media(max-width:480px){.event{flex-direction:column;align-items:flex-start;gap:.35rem}.event .date{width:auto}.event .date .day,.event .date .month{display:inline;font-size:1.15rem}}
+</style><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<style>
+.map-wrap{max-width:1000px}
+#karte{height:min(70vh,560px);min-height:380px;border:1px solid #c4d5d4;border-radius:6px;background:#e7f3fa}
+.pin{display:flex;align-items:flex-end;gap:6px;white-space:nowrap;transform:translate(-3px,-100%)}
+.pin svg{flex:none;filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}
+.pin .lbl{background:#fff;border:2px solid #00517f;border-radius:5px;padding:2px 7px;font:700 14px/1.25 system-ui,-apple-system,sans-serif;color:#103750;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.pin .lbl b{display:block;font-weight:800;color:#00517f;font-size:13px}
+.leaflet-div-icon{background:none;border:0}
+.standorte{list-style:none;padding:0;margin:1.2rem 0;display:grid;gap:.6rem;max-width:760px}
+.standorte li{background:#fff;border:1px solid #c4d5d4;border-left:6px solid #006395;border-radius:6px;padding:.75rem 1rem}
+.standorte strong{display:block;font-size:1.15rem}
+.summe{font-size:1.25rem;font-weight:800;color:#00517f}
+</style></head><body class="subpage"><a class="skip" href="#inhalt">Zum Inhalt springen</a><header><div class="bar"><div class="branding"><a href="index.html" aria-label="Zur Startseite"><img class="brandlogo" src="wir-sind-wir-logo.jpg" alt="Wir sind Wir – Inclusion in Sailing"></a><a class="brand" href="index.html">RS VENTURE CONNECT <span aria-hidden="true"> / </span> WISSEN</a></div><nav aria-label="Hauptnavigation"><a href="news.html">News</a><a href="wm-2027.html">WM 2027</a><a href="klasse.html">RS Venture Connect Klassenvereinigung</a><a href="akademie.html">RS Venture Akademie</a><a href="regatten.html">Termine</a><a href="standorte.html" aria-current="page">Standorte</a><a href="boot.html">Das Boot</a><a href="linksammlung.html">Linksammlung</a><a href="kontakte.html">Kontakte</a></nav></div></header><main id="inhalt"><section class="hero"><div class="wrap"><p class="eyebrow">Wissen, das verbindet</p><h1>Standorte</h1><p class="lead">Wo RS Venture Connect Boote liegen – unsere Planungsgrundlage.</p><p><a class="button" href="index.html">Zurück zur Startseite</a></p></div></section>
+<section class="wrap map-wrap"><p class="summe">4 Boote an 3 Standorten</p><div id="karte" role="img" aria-label="Deutschlandkarte mit den Standorten Hamburg, Berlin-Wannsee und Möhnesee"></div>
+<ul class="standorte">
+<li><strong>Hamburg, Außenalster</strong>Hamburger Segel-Club / Wir sind Wir · 2 Boote</li>
+<li><strong>Berlin, Wannsee</strong>Verein Seglerhaus am Wannsee (VSaW) · 1 Boot</li>
+<li><strong>Möhnesee</strong>Yachtclub Möhnesee · 1 Boot</li>
+</ul>
+<p class="muted">Stand: 13. November 2026. Weitere Standorte ergänzen wir gern – bitte über die <a href="kontakte.html">Kontakte</a> melden.</p></section></main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function(){
+  if(!window.L){return;}
+  var map=L.map('karte',{scrollWheelZoom:false});
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>-Mitwirkende'}).addTo(map);
+  var HH='<svg width="34" height="40" viewBox="0 0 34 40" aria-hidden="true"><rect x="1" y="0" width="2.5" height="40" fill="#333"/><rect x="3.5" y="1" width="29" height="19" fill="#e2001a"/><path fill="#fff" d="M9 17v-6h2v-2h2v2h2v-3h2v-2h2v2h2v3h2v-2h2v2h2v6h-6v-3a2 2 0 0 0-4 0v3z"/></svg>', BL='<svg width="34" height="40" viewBox="0 0 34 40" aria-hidden="true"><rect x="1" y="0" width="2.5" height="40" fill="#333"/><rect x="3.5" y="1" width="29" height="19" fill="#006395"/><path fill="#fff" d="M11 16 L18 5 L18 16 Z M19 7 L25 16 L19 16 Z"/></svg>';
+  var orte=[
+    {ll:[53.5673,10.0050],flag:HH,name:'HSC / Wir sind Wir',info:'2 Boote'},
+    {ll:[52.4255,13.1735],flag:BL,name:'VSaW',info:'1 Boot'},
+    {ll:[51.4920,8.1100],flag:BL,name:'Yachtclub Möhnesee',info:'1 Boot'}
+  ];
+  orte.forEach(function(o){
+    L.marker(o.ll,{icon:L.divIcon({className:'',html:'<div class="pin">'+o.flag+'<span class="lbl">'+o.name+'<b>'+o.info+'</b></span></div>',iconSize:[0,0]})}).addTo(map);
+  });
+  map.fitBounds([[47.3,5.9],[55.1,15.0]]);
+})();
+</script><footer><div class="wrap"><strong>RS Venture Connect · Wissensportal</strong><p>Ein erster Entwurf. Inhalte und Quellen werden schrittweise ergänzt.</p><a href="kontakte.html">Kontakte</a></div></footer></body></html>
